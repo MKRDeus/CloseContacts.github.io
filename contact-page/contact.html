@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Book</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <nav>
+      <ul id="navbar">
+        <li id="add-link" class="menu-items">
+          <a class="links-menu">Agregar Contacto</a>
+        </li>
+        <li id="contact-link" class="menu-items">
+          <a class="links-menu">Contactos</a>
+        </li>
+        <li id="logout-link" class="menu-items">
+          <a class="links-menu">Log Out</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div id="container">
+        <form id="form" class="show">
+          <div id="register-container">
+            <div id="title-container">
+              <h1 id="title">Add Book</h1>
+            </div>
+            <div id="input-container">
+              <div id="input-name-container">
+                <label class="labels" for="name-input"
+                  >Nombre: <span>*</span></label
+                >
+                <input
+                  autocomplete="off"
+                  class="inputs"
+                  id="name-input"
+                  type="text"
+                  placeholder="José Paéz"
+                  required
+                />
+                <p class="helper-text">
+                  Debe ingresar solo letras, no numeros.
+                </p>
+              </div>
+              <div id="input-numberphone-container">
+                <div id="numberphone-container">
+                  <label class="labels" for="numberphone-input"
+                    >Numero de Telefono:<span>*</span></label
+                  >
+                  <input
+                    autocomplete="off"
+                    class="inputs"
+                    type="tel"
+                    id="numberphone-input"
+                    placeholder="04241114444"
+                    required
+                  />
+                  <p class="helper-text">
+                    Debe ingresar un numero telofonico, no ingrese letras
+                    letras. solo numeros venezolanos (0424,0414,0412,0416,0426)
+                  </p>
+                </div>
+              </div>
+              <button type="submit" id="register-button">
+                <ion-icon name="save-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </form>
+        <div id="list-container" class="hide">
+          <div id="title-container">
+            <h1 id="title">Contact List</h1>
+          </div>
+          <ul id="list"></ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="nav-contact.js"></script>
+    <script src="contact.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

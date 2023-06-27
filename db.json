@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "username": "mkr",
+      "id": 1
+    }
+  ],
+  "contacts": [
+    {
+      "name": "Arturo Rizalez",
+      "user": "mkr",
+      "number": "04123689251",
+      "id": 3
+    }
+  ]
+}
